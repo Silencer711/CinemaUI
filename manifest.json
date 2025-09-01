@@ -1,9 +1,421 @@
 {
-	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "0.1.0",
-	"id": "YourPreferredAlias.AnIDForTheMod",
-	"name": "Test Mod",
-	"description": "A truly amazing mod",
-	"authors": ["Your Preferred Alias"],
-	"frameworkVersion": "2.25.1"
+	"$schema": "https:/raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
+	"version": "1.0.0",
+	"id": "Silencer711.CinemaUI",
+	"name": "Cinema UI",
+	"updateCheck": "https://github.com/Silencer711/Cinema-UI/releases/latest/download/updates.json",
+	"description": "A user interface and visual overhaul mod for \"Hitman: World of Assassination (2023)\".",
+	"authors": ["Silencer711"],
+	"frameworkVersion": "2.33.27",
+	"loadAfter": ["BurnTheWitch.HeritageUI"],
+	"options": [
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "- The default boot logo. \n - \"Hitman: WoA (Transparent WHITE)\" \n - A white-colored  boot logo with transparent text (the letters of HITMAN are transparent).",
+			"image": "framework/bootLogo_woaDefault_transWhite.png",
+			"type": "select",
+			"group": "Boot Logo"
+		},
+		{
+			"name": "Red",
+			"tooltip": "- \"Hitman: WoA / (Transparent RED)\" \n - A red-colored variation of the default boot logo with transparent text (the letters of HITMAN are transparent).",
+			"image": "framework/bootLogo_woaDefault_transRed.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/woa/default/transRed"]
+		},
+		{
+			"name": "Black",
+			"tooltip": "- \"Hitman: WoA / (Transparent BLACK)\" \n - A black-colored variation of the default boot logo with transparent text (the letters of HITMAN are transparent).",
+			"image": "framework/bootLogo_woaDefault_transBlack.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/woa/default/transBlack"]
+		},
+		{
+			"name": "Signature Edition",
+			"tooltip": "- \"Hitman: WoA / (Signature Edition)\" \n - The \"Signature Edition\" boot logo from the (\"Hitman: World of Assassination\") release on the Nintendo Switch 2 (2025).",
+			"image": "framework/bootLogo_woaDefault_SigEd.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/woa/default/SigEd"]
+		},
+		{
+			"name": "2007 movie",
+			"tooltip": "- \"HITMAN (2007 movie)\" \n - The fancy custom logo from Hitman (2007 movie).",
+			"image": "framework/bootLogo_2007movie.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/2007/movie"]
+		},
+		{
+			"name": "2007 movie / WoA",
+			"enabledByDefault": true,
+			"tooltip": "- \"HITMAN (2007 movie) with WoA subtitle.\" \n - The fancy custom logo from Hitman (2007 movie) with custom WoA subtitle.",
+			"image": "framework/bootLogo_2007movieWoa.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/2007/movieWoa"]
+		},
+		{
+			"name": "2016",
+			"tooltip": "- \"Hitman 2016 | Classic\" \n - The original Hitman (2016) logo.",
+			"image": "framework content\bootLogo_2016_classic.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/2016/classic"]
+		},
+		{
+			"name": "2016 / GotY",
+			"tooltip": "- \"Hitman 2016 | Black\" \n - The original Hitman (2016 GOTY) logo.",
+			"image": "framework/bootLogo_2016_goty.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/2016/goty"]
+		},
+		{
+			"name": "2016 / Red",
+			"tooltip": "- \"Hitman 2016 | Red\" \n - The original Hitman (2016) logo, in RED.",
+			"image": "framework/bootLogo_2016_red.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/2016/red"]
+		},
+		{
+			"name": "H3",
+			"tooltip": "- \"Hitman 3 | Classic (Black on Red)\" \n - The original Hitman 3 (2021) logo.",
+			"image": "framework/bootLogo_h3_blackRed.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3/blackRed"]
+		},
+		{
+			"name": "H3 / v2",
+			"tooltip": "- \"Hitman 3 | Black on White\" \n - A \"Black on White\" variation of the original Hitman 3 (2021) logo.",
+			"image": "framework/bootLogo_h3_blackWhite.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3/blackWhite"]
+		},
+		{
+			"name": "H3 / v3",
+			"tooltip": "- \"Hitman 3 | Red on Black\" \n - A \"Red on Black\" variation of the original Hitman 3 (2021) logo.",
+			"image": "framework/bootLogo_h3_redBlack.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3/redBlack"]
+		},
+		{
+			"name": "H3 / v4",
+			"tooltip": "- \"Hitman 3 | White on Black\" \n - A \"White on Black\" variation of the original Hitman 3 (2021) logo.",
+			"image": "framework/bootLogo_h3_whiteBlack.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3/whiteBlack"]
+		},
+		{
+			"name": "Hybrid",
+			"tooltip": "- \"Hitman: WoA (Hybrid)\" \n - A multi-colored \"hybrid\" variation of the default boot logo. \n - Hitman: World of Assassination (2023)",
+			"image": "framework/bootLogo_woaHybrid_blackRedWhite.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/woa/hybrid/blackRedWhite"]
+		},
+		{
+			"name": "Hybrid / v2",
+			"tooltip": "- \"Hitman: WoA (Hybrid) | Red on Black\" \n - A red-on-black \"hybrid\" variation of the default boot logo.",
+			"image": "framework/bootLogo_woaHybrid_redBlackRed.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/woa/hybrid/redBlackRed"]
+		},
+		{
+			"name": "Hybrid / v3",
+			"tooltip": "- \"Hitman: WoA (Hybrid) | White on Black\" \n - A white on black-colored \"hybrid\" variation of the default boot logo.",
+			"image": "framework/bootLogo_woaHybrid_whiteBlackWhite.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/woa/hybrid/whiteBlackWhite"]
+		},
+		{
+			"name": "Hybrid / v4",
+			"tooltip": "- \"Hitman: WoA (Hybrid) | Transparent RED on RED\" \n - A red-colored \"hybrid\" variation of the default boot logo. \n - Transparent text (the letters of HITMAN are transparent).",
+			"image": "framework/bootLogo_woaHybrid_transRedRed.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/woa/hybrid/transRedRed"]
+		},
+		{
+			"name": "LTRS / Red",
+			"tooltip": "- \"Hitman 3 (no 3) | RED (Letters Only)\" \n - A red-colored \"Letters Only\" variation of the Hitman 3 logo.",
+			"image": "framework/bootLogo_h3no3_LettersOnly_red.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3LO/red"]
+		},
+		{
+			"name": "LTRS / White",
+			"tooltip": "- \"Hitman 3 (no 3) | WHITE (Letters Only)\" \n - A white-colored \"Letters Only\" variation of the Hitman 3 logo.",
+			"image": "framework/bootLogo_h3no3_LettersOnly_white.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3LO/white"]
+		},
+		{
+			"name": "LTRS / Black",
+			"tooltip": "- \"Hitman 3 (no 3) | BLACK (Letters Only)\" \n - A black-colored \"Letters Only\" variation of the Hitman 3 logo.",
+			"image": "framework/bootLogo_h3no3_LettersOnly_black.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3LO/black"]
+		},
+		{
+			"name": "no3",
+			"tooltip": "- \"Hitman 3 (no 3) | Black on Red\" \n - A cropped (no 3) variation of the original Hitman 3 (2021) logo.",
+			"image": "framework/bootLogo_h3no3_part_blackRed.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3/blackRed"]
+		},
+		{
+			"name": "no3 / v2",
+			"tooltip": "- \"Hitman 3 (no3) | Black on White\" \n - A cropped (no 3) \"White on Black\" variation of the original Hitman 3 (2021) logo.",
+			"image": "framework/bootLogo_h3no3_part_blackWhite.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3/blackWhite"]
+		},
+		{
+			"name": "no3 / v3",
+			"tooltip": "- \"Hitman 3 (no3) | Red on Black\" \n - A cropped (no 3) \"Red on Black\" variation of the original Hitman 3 (2021) logo.",
+			"image": "framework/bootLogo_h3no3_part_redBlack.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3/redBlack"]
+		},
+		{
+			"name": "\"Transparent\" | no3",
+			"tooltip": "- \"Hitman 3 (no 3) | Transparent on Red\" \n - A variation of \"no.3\". \n - Transparent text (the letters of HITMAN are transparent).",
+			"image": "framework/bootLogo_h3no3_part_transRed.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3/transRed"]
+		},
+		{
+			"name": "\"Transparent\" | no3 / v2",
+			"tooltip": "- \"Hitman 3 (no 3) | Transparent on White\" \n - A variation of \"no.3 | v2\". \n - Transparent text (the letters of HITMAN are transparent).",
+			"image": "framework/bootLogo_h3no3_part_transWhite.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3/transWhite"]
+		},
+		{
+			"name": "\"Transparent\" | no3 / v3",
+			"tooltip": "- \"Hitman 3 (no 3) | Transparent on Black\" \n - A variation of \"no.3 | v3\". \n - Transparent text (the letters of HITMAN are transparent).",
+			"image": "framework/bootLogo_h3no3_part_transBlack.png",
+			"type": "select",
+			"group": "Boot Logo",
+			"contentFolders": ["mod/bootLogo/h3no3/transBlack"]
+		},
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "- The default attraction screen.",
+			"image": "framework/attractionScreen_default.jpg",
+			"type": "select",
+			"group": "Attraction Screen"
+		},
+		{
+			"name": "2007 movie",
+			"tooltip": "- \"HITMAN (2007 movie)\" \n - The front cover of Hitman (2007 movie).",
+			"image": "framework/attractionScreen_2007movie.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/2007movie/blobs"]
+		},
+		{
+			"name": "Blue /\"Night Ops\"",
+			"tooltip": "- \"World Map | Blue (Night Ops)\" \n - A low-light friendly world map in BLUE. \n - Perfect for night-time operations. \n - A heavily-modified version of the original Hitman 2016 GOTY world map attraction screen.",
+			"image": "framework/attractionScreen_worldMapBlueNOps.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/worldMap/blueNOps/blobs"]
+		},
+		{
+			"name": "Cinema UI",
+			"enabledByDefault": true,
+			"tooltip": "- \"Cinema UI\" \n - Cinema UI's custom attraction screen.",
+			"image": "framework/attractionScreen_CUI_v1.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/CUI/v1/blobs"]
+		},
+		{
+			"name": "D.O.T.S",
+			"tooltip": "- \"World Map | Black & White (Dots)\" \n - A unique world map (in black & white), styled in a white-dot array. \n A custom version of a Hitman 2016 promo screen.",
+			"image": "framework/attractionScreen_worldMapDotsBW.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/worldMap/dotsBW/blobs"]
+		},
+		{
+			"name": "H3 / v1",
+			"tooltip": "- \"Hitman 3 | Classic\" \n - Hitman 3's attraction screen as it was in 2021.",
+			"image": "framework/attractionScreen_h3classic.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/h3/classic/blobs"]
+		},
+		{
+			"name": "H3 / v2",
+			"tooltip": "- \"Hitman 3 | Full-Size\" \n - Hitman 3's attraction screen expanded to \"full-size\".",
+			"image": "framework/attractionScreen_h3fullSize.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/h3/fullSize/blobs"]
+		},
+		{
+			"name": "GOTY",
+			"tooltip": "- \"World Map | GOTY\" \n - A low-light friendly world map in BLACK & WHITE. \n - Perfect for night-time operations. \n - The original Hitman 2016 GOTY attraction screen.",
+			"image": "framework/attractionScreen_worldMapGOTY.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/worldMap/goty/blobs"]
+		},
+		{
+			"name": "Red / Strategic",
+			"tooltip": "- \"World Map | Red Strategic\" \n - A bright-red world map in strategic-view. \n - A heavily-modified version of the red strategic map from Hitman 2016.",
+			"image": "framework/attractionScreen_worldMapRedStrat.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/worldMap/redStrat/blobs"]
+		},
+		{
+			"name": "Red / Strategic (FULL BLUR)",
+			"tooltip": "- \"World Map | Red Strategic (Full Blur)\" \n - A bright-red world map in strategic-view \n - Fully blurred. \n - A heavily-modified version of the red strategic map from Hitman 2016.",
+			"image": "framework/attractionScreen_worldMapRedStratBlurFull.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/worldMap/redStratBlurFull/blobs"]
+		},
+		{
+			"name": "Red / Strategic (47)",
+			"tooltip": "- \"World Map | Red Strategic (47)\" \n - A bright-red world map (in strategic-view). \n - Slightly blurred from view with Agent 47 front and center. \n - Custom-made for Cinema UI.",
+			"image": "framework/attractionScreen_worldMapRedStrat47.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/worldMap/redStrat47/blobs"]
+		},
+		{
+			"name": "Signature Edition",
+			"tooltip": "- \"Hitman: WoA (Signature Edition)\" \n - The attraction screen from the (\"Hitman: World of Assassination\") release on the Nintendo Switch 2 (2025).",
+			"image": "framework/attractionScreen_h3woaSigEd.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/h3/woaSigEd/blobs"]
+		},
+		{
+			"name": "Sniper 47",
+			"tooltip": "- \"Hitman 3 | Sniper 47\" \n - A significantly-improved version of Hitman 3's sniper \"game mode\" image.",
+			"image": "framework/attractionScreen_h3sniper47.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/h3/sniper47/blobs"]
+		},
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "- The default main menu background.",
+			"image": "framework/mainMenuBG_default.jpg",
+			"type": "select",
+			"group": "Main Menu Background"
+		},
+		{
+			"name": "Blue / Night Ops",
+			"tooltip": "- \"World Map | Blue (Night Ops)\" \n - A low-light environment blue world map with blurred lines. \n - Perfect for night-time operations. \n - A heavily-modified version of the Hitman 2016 GOTY world map attraction screen. \n - 4K.",
+			"image": "framework/mainMenuBG_worldMapBlueNOps.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod/mainMenuBGs/worldMap/blueNOps/blobs"]
+		},
+		{
+			"name": "D.O.T.S",
+			"enabledByDefault": true,
+			"tooltip": "- \"World Map | Black & White (Dots)\" \n - A unique world map (in black & white), styled in a white-dot array. \n A custom version of a Hitman 2016 promo screen. \n - 4K.",
+			"image": "framework/mainMenuBG_worldMapDotsBW.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod/mainMenuBGs/worldMap/dotsBW/blobs"]
+		},
+		{
+			"name": "GOTY",
+			"tooltip": "- \"World Map | GOTY\" \n - The world map (in black & white). \n - The original Hitman 2016 GOTY attraction screen. \n - 4K.",
+			"image": "framework/mainMenuBG_worldMapGOTY.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod/mainMenuBGs/worldMap/goty/blobs"]
+		},
+		{
+			"name": "HUI / v2",
+			"tooltip": "- \"Heritage UI | Redux v2\" \n - A reborn version of Heritage UI's \"Redux\" main menu background. \n - 4K.",
+			"image": "framework/mainMenuBG_huiReduxV2.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod/mainMenuBGs/HUIreduxV2/blobs"]
+		},
+		{
+			"name": "Red / Strategic",
+			"tooltip": "- \"World Map | Red Strategic\" \n - A bright-red world map in strategic-view. \n - A heavily-modified version of the red strategic map from Hitman 2016. \n - 4K.",
+			"image": "framework/mainMenuBG_worldMapRedStrat.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod/mainMenuBGs/worldMap/redStrat/blobs"]
+		},
+		{
+			"name": "Red / Strategic (MIDLINE BLUR)",
+			"tooltip": "- \"World Map | Red Strategic (Midline Blur)\" \n - A bright-red world map in strategic-view. \n - A midline blur has been applied to enhance content presented in the middle section of the screen. \n - 4K.",
+			"image": "framework/mainMenuBG_worldMapRedStratBlurMid.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod/mainMenuBGs/worldMap/redStratBlurMid/blobs"]
+		},
+		{
+			"name": "Red / Strategic (FULL BLUR)",
+			"tooltip": "- \"World Map | Red Strategic (Full Blur)\" \n - A bright-red world map in strategic-view. \n - A full blur has been applied to enhance all content presented on the screen. \n - 4K.",
+			"image": "framework/mainMenuBG_worldMapRedStratBlurFull.jpg",
+			"type": "select",
+			"group": "Main Menu Background",
+			"blobsFolders": ["mod/mainMenuBGs/worldMap/redStratBlurFull/blobs"]
+		},
+		{
+			"name": "OFF (Game Default)",
+			"tooltip": "- The default, low-fidelity destination backgrounds.",
+			"image": "framework/destinationBG_default.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds"
+		},
+		{
+			"name": "\"Only Upscaled\"",
+			"tooltip": "- \"Images were upscaled only.\" \n - Pictures processed with Upscaling and intensified values for Color, Vibrance, and Lighting. \n - Images were upscaled x4 the details of the original game assets, downscaled back to 1440p resolution, and optimized (cleaned up) during the process.",
+			"image": "framework/destinationBG_upscaledOnly.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds",
+			"blobsFolders": ["mod/destinationBGs/upscaledOnly/blobs"]
+		},
+		{
+			"name": "Colorful",
+			"tooltip": "- \"Images were upscaled AND adjusted to look more colorful and vibrant.\" \n - Pictures processed with Upscaling. \n - Color, vibrance, and lighting were increased where appropriate. \n - Images were upscaled x4 the details of the original game assets, downscaled back to 1440p resolution, and optimized (cleaned up) during the process.",
+			"image": "framework/destinationBG_colorful.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds",
+			"blobsFolders": ["mod/destinationBGs/colorful/blobs"]
+		},
+		{
+			"name": "Realistic",
+			"enabledByDefault": true,
+			"tooltip": "- \"Images were upscaled AND adjusted to look closer to real life.\" \n - Pictures processed with Upscaling. \n - Color, vibrance, and lighting were adjusted to more closely resemble reality. \n - Images were upscaled x4 the details of the original game assets, downscaled back to 1440p resolution, and optimized (cleaned up) during the process.",
+			"image": "framework/destinationBG_realistic.jpg",
+			"type": "select",
+			"group": "Destination Backgrounds",
+			"blobsFolders": ["mod/destinationBGs/realistic/blobs"]
+		}
+	]
 }
