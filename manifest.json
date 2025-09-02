@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"id": "Silencer711.CinemaUI",
 	"name": "Cinema UI",
-	"updateCheck": "https://github.com/Silencer711/Cinema-UI/releases/latest/download/updates.json",
+	"updateCheck": "https://github.com/Silencer711/CinemaUI/releases/latest/download/updates.json",
 	"description": "A user interface and visual overhaul mod for \"Hitman: World of Assassination (2023)\".",
 	"authors": ["Silencer711"],
 	"frameworkVersion": "2.33.27",
