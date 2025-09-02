@@ -60,13 +60,13 @@
 		{
 			"name": "2016",
 			"tooltip": "- \"Hitman 2016 | Classic\" \n - The original Hitman (2016) logo.",
-			"image": "framework content\bootLogo_2016_classic.png",
+			"image": "framework/bootLogo_2016_classic.png",
 			"type": "select",
 			"group": "Boot Logo",
 			"contentFolders": ["mod/bootLogo/2016/classic"]
 		},
 		{
-			"name": "2016 / GotY",
+			"name": "2016 / GOTY",
 			"tooltip": "- \"Hitman 2016 | Black\" \n - The original Hitman (2016 GOTY) logo.",
 			"image": "framework/bootLogo_2016_goty.png",
 			"type": "select",
@@ -258,6 +258,14 @@
 			"blobsFolders": ["mod/attractionScreen/worldMap/dotsBW/blobs"]
 		},
 		{
+			"name": "GOTY",
+			"tooltip": "- \"World Map | GOTY\" \n - A low-light friendly world map in BLACK & WHITE. \n - Perfect for night-time operations. \n - The original Hitman 2016 GOTY attraction screen.",
+			"image": "framework/attractionScreen_worldMapGOTY.jpg",
+			"type": "select",
+			"group": "Attraction Screen",
+			"blobsFolders": ["mod/attractionScreen/worldMap/goty/blobs"]
+		},
+		{
 			"name": "H3 / v1",
 			"tooltip": "- \"Hitman 3 | Classic\" \n - Hitman 3's attraction screen as it was in 2021.",
 			"image": "framework/attractionScreen_h3classic.jpg",
@@ -272,14 +280,6 @@
 			"type": "select",
 			"group": "Attraction Screen",
 			"blobsFolders": ["mod/attractionScreen/h3/fullSize/blobs"]
-		},
-		{
-			"name": "GOTY",
-			"tooltip": "- \"World Map | GOTY\" \n - A low-light friendly world map in BLACK & WHITE. \n - Perfect for night-time operations. \n - The original Hitman 2016 GOTY attraction screen.",
-			"image": "framework/attractionScreen_worldMapGOTY.jpg",
-			"type": "select",
-			"group": "Attraction Screen",
-			"blobsFolders": ["mod/attractionScreen/worldMap/goty/blobs"]
 		},
 		{
 			"name": "Red / Strategic",
