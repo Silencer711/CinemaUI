@@ -6,4 +6,4 @@ A user interface and visual overhaul mod for "Hitman: World of Assassination (20
 
 ---
 
-`Silencer711.CinemaUI` v1.0.0, by Silencer711. This README was automatically generated from the mod's manifest.
+`Silencer711.CinemaUI` v1.0.1, by Silencer711. This README was automatically generated from the mod's manifest.

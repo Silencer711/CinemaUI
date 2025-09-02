@@ -1,6 +1,6 @@
 {
 	"$schema": "https:/raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"id": "Silencer711.CinemaUI",
 	"name": "Cinema UI",
 	"updateCheck": "https://github.com/Silencer711/CinemaUI/releases/latest/download/updates.json",
